@@ -3,8 +3,8 @@ const { company, title, startDate, endDate, description } = Astro.props;
 ---
 
 <div class="bg-white p-6 rounded-2xl shadow-md">
-  <h3 class="text-xl font-bold">{company}</h3>
-  <h2 class="text-gray-600">{title}</h2>
+  <h2 class="text-xl font-bold">{title}</h2>
+  <h3 class="text-gray-600">{company}</h3>
   <p class="text-gray-600 text-sm mt-2">{startDate} - {endDate ? endDate : "Present"}</p>
   {
     Array.isArray(description) ? (
